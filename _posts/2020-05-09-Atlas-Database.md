@@ -1,0 +1,35 @@
+---
+layout: post
+title: "Atlas Database"
+date: 2020-05-09 12:00:00 -0400
+categories: build
+---
+
+The first step is to set up the Atlas database - this is the foundation data layer that serve data to the mobile apps, charts, and web apps.
+
+1. Login to <A HREF="https://cloud.mongodb.com">cloud.mongodb.com</A> - create a free login if needed.<BR><BR>
+1. Create a project (example: Code For Good). <BR><BR>
+1. Go to Access Manager, and give yourself all permissions, not just Owner.<BR><BR>
+1. Create a 4.4 Cluster:
+   1. Choose a path - choose Shared Clusters: 
+<img src="/assets/images/Atlas_Choose_Path.png" style="border:1px solid black" width="100%"><BR><BR>
+   1. Choose Cloud Provider and Region
+<img src="/assets/images/Atlas_Cloud_Region.png" style="border:1px solid black" width="100%"><BR><BR>
+   1. Choose Cluster Tier - M0 is the free tier
+<img src="/assets/images/Atlas_Tier.png" style="border:1px solid black" width="100%"><BR><BR>
+   1. Select a Version - 4.4
+<img src="/assets/images/Atlas_Version.png" style="border:1px solid black" width="100%"><BR><BR>
+   1. Cluster Name (example: OFISH)
+<img src="/assets/images/Atlas_Cluster_Name.png" style="border:1px solid black" width="100%"><BR><BR>
+   1. Click "Create Cluster" - this will take a few minutes <BR><BR>
+1. Setup connection security
+   1. Click "CONNECT" on the cluster
+<img src="/assets/images/Atlas_CONNECT.png" style="border:1px solid black" width="100%"><BR><BR>
+   1. On this screen, click "Add Your Current IP Address"
+<img src="/assets/images/Atlas_Setup_User.png" style="border:1px solid black" width="100%"><BR><BR>
+   1. Add in a Description so you know it's yours later on. Click "Add IP Address"
+<img src="/assets/images/Atlas_Whitelist_IP.png" style="border:1px solid black" width="100%"><BR><BR>
+   1. Add database access (example: admin)
+<img src="/assets/images/Atlas_Add_MongoDB_User.png" style="border:1px solid black" width="100%"><BR><BR>
+
+Congratulations, you have set up an Atlas database!
