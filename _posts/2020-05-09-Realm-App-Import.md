@@ -5,7 +5,7 @@ date: 2020-05-09 14:00:00 -0400
 categories: build
 ---
 
-Now that you've created your Atlas database, create the Realm App and import all the code associated with it (e.g. functions, triggers):
+Now that you've populated your Atlas database, create the Realm App and import all the code associated with it (e.g. functions, triggers):
 
 1. Create Realm app, called WildAidApp, link database
 1. Access Manager, Project, create API key
