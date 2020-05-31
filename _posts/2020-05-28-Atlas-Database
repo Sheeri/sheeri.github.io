@@ -1,0 +1,17 @@
+---
+layout: post
+title: "Atlas Database"
+date: 2020-05-28
+---
+
+The first step is to set up the Atlas database - this is the foundation data layer that serve data to the mobile apps, charts, and web apps.
+
+[ ] Login to <A HREF="https://cloud.mongodb.com">cloud.mongodb.com</A> - create a free login if needed.
+[] Create a project (example: Code For Good). 
+[x] Go to Access Manager, and give yourself all permissions, not just Owner.
+[ ] Create a 4.4 Cluster
+[ ] Add database access (example: admin)
+[ ] Whitelist your IP
+
+
+
