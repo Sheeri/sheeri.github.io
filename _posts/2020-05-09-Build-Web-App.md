@@ -11,8 +11,10 @@ Cluster name: OceanWatchData<BR><BR>
 
 
 Build the web app:
-1. Get the code
-1. git clone https://github.com/mongodb-appeng/ocean-watch-web.git
+1. Get the code<BR>
+   git clone https://github.com/mongodb-appeng/ocean-watch-web.git
+<BR>for now, <A HREF="/assets/files/ocean-watch-web.tar.gz">click here</A>
+1. cd `ocean-watch-web`
 1. edit src/.env/config.js 
 1. npm run build
 1. Go to the Hosting tab for the Stitch app

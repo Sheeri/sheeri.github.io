@@ -28,7 +28,7 @@ The first step is to set up the Atlas database - this is the foundation data lay
 <img src="/assets/images/Atlas_Tier.png" style="border:1px solid black" width="100%"><BR><BR>
    1. Select a Version - 4.4
 <img src="/assets/images/Atlas_Version.png" style="border:1px solid black" width="100%"><BR><BR>
-   1. Cluster Name (example: OFISH)
+   1. Cluster Name (example: OceanWatchData) - take note of this, you will need to know your Cluster name in many future steps.
 <img src="/assets/images/Atlas_Cluster_Name.png" style="border:1px solid black" width="100%"><BR><BR>
    1. Click "Create Cluster" - this will take a few minutes <BR><BR>
 

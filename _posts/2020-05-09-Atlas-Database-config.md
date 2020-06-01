@@ -5,6 +5,9 @@ date: 2020-05-09 12:30:00 -0400
 categories: build
 ---
 
+Recap: 
+Cluster name (example): OceanWatchData
+
 Once your Atlas cluster is active, let's configure it.
 
 1. Setup connection security

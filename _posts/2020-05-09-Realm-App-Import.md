@@ -9,6 +9,10 @@ Recap:<BR>
 Project Name: WildAid<BR>
 Cluster name: OceanWatchData<BR><BR>
 
+
+NOTE TO COPY PUBLIC KEY
+TAKE OUT HOSTING FROM THE stitch.json
+
 Now that you've populated your Atlas database, this page will walk you through creating the Realm App and import all the code associated with it (e.g. functions, triggers):
 
 1. Create the WildAid Realm application:
@@ -32,23 +36,27 @@ Now that you've populated your Atlas database, this page will walk you through c
 <img src="/assets/images/Copy_Private_Key.png" style="border:1px solid black" width="100%"><BR><BR>
    1. Add your current IP to the whitelist and click "Save".
 <img src="/assets/images/Add_IP_API_Key_Whitelist.png" style="border:1px solid black" width="100%"><BR><BR>
+
 1. stitch-cli setup
-   1. Install stitch-cli- see instructions for manual install or install via `npm` at https://docs.mongodb.com/stitch/deploy/stitch-cli-reference/<BR><BR>
+   1. Install stitch-cli - see instructions for manual install or install via `npm` at <A HREF="https://docs.mongodb.com/stitch/deploy/stitch-cli-reference/" _target="blank">https://docs.mongodb.com/stitch/deploy/stitch-cli-reference</A><BR><BR>
    1. Connect your commandline with Realm using `stitch-cli login`:<BR>
       `stitch-cli login --api-key="PUBLIC_API_KEY" --private-api-key="PRIVATE_API_KEY" --base-url=https://realm-dev.mongodb.com`<BR><BR>
       It works when the output is <BR>`you have successfully logged in as PUBLIC_API_KEY`<BR><BR>
-   1. Add the AWS secret - if not using AWS, use a dummy string; otherwise the Realm import will not work. You will need your application ID (example: wildaidapp-xxxxx)
+   1. If you are connecting your instance with an external AWS environment, add your AWS secret key as the `--value` in this command. If you are not connecting your instance with AWS, you still need to run this command but `--value` can be set to any string. 
+   You will need your Realm application ID (example: wildaidapp-xxxxx)<BR>
       `stitch-cli secrets add --app-id=wildaidapp-xxxxx --name=AWS-secret-key --value=my-aws-secret-api-key --base-url=https://realm-dev.mongodb.com`<BR><BR>
+      It works when the output is <BR>`New secret created: AWS-secret-key`<BR><BR>
 1. Import the Realm code
-      1. Get the Realm code to import - `git clone Realm_repo` <BR>
+      1. Get the Realm code to import - in your terminal, `git clone Realm_repo` <BR>
       For now, download and extract <A HREF="/assets/files/WildAidRealm.tar.gz">WildAidRealm.tar.gz</A>.<BR><BR>
-      1. Edit files: change "name" to your application name (wildaidapp-xxxxx) and "ClusterName" to your cluster's name (example is WildAid)<BR>
-       `stitch.json services/RealmSync/config.json services/mongodb-atlas/config.json`<BR><BR>
-      1. Edit files: change AWS service info (leave unedited if not using): <BR>
+      1. `cd WildAidDemo`
+      1. Edit `stitch.json` change "name" to your Realm application name (example is wildaidapp-xxxxx) 
+      1. Edit `services/RealmSync/config.json services/mongodb-atlas/config.json`<BR> and change "ClusterName" to your cluster's name (example is WildAid)<BR>
+      1. Edit the following files if using AWS and fill in all the variables. If not, you can leave the files as-is.<BR>
        `values/awsRegion.json values/destinationEmailAddress.json values/sourceEmailAddress.json`<BR><BR>
-      1. Set accessKeyID if using AWS (leave unedited if not using): <BR>
+      1. Set accessKeyID if using AWS (leave unedited if not using) in the file: <BR>
         `WildAidDemo/services/AWS/config.json`<BR><BR>
-      1. Do the import, confirm with 'y' when prompted:
+      1. Do the import, confirm with 'y' when prompted to confirm changes. You will need your Realm application ID:
         `stitch-cli import --app-id=wildaidapp-xxxxx --strategy=replace --include-dependencies --base-url=https://realm-dev.mongodb.com`<BR><BR>
       1. Verify the code got imported by going to the Realm App and clicking "Functions" on the left-hand side. You should see several functions, as below:
         <img src="/assets/images/Functions.png" style="border:1px solid black" width="100%"><BR><BR>
