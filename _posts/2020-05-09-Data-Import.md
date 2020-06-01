@@ -9,7 +9,7 @@ Now that you've created your Atlas database, import the sample dataset:
 
 1. Get the mock data and import
    1. git clone URL<BR>
-   For now, extract <A HREF="/assets/files/CodeForGoodDataSet.tar.gz">CodeForGoodDataSet.tar.gz</A>.
+   For now, download and extract <A HREF="/assets/files/CodeForGoodDataSet.tar.gz">CodeForGoodDataSet.tar.gz</A>.
    1. Note the path to the directory CodeForGoodbackup, which contains a directory called "wildaid".  <BR><BR>
 1. Get connection string
    1. Click CONNECT in the cluster itself (or as previously on the "all clusters" page for the project):

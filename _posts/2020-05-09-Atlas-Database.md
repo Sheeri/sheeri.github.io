@@ -7,7 +7,7 @@ categories: build
 
 The first step is to set up the Atlas database - this is the foundation data layer that serve data to the mobile apps, charts, and web apps.
 
-1. Login to <A HREF="https://cloud.mongodb.com">cloud.mongodb.com</A> - create a free login if needed.<BR><BR>
+1. Login to <A HREF="https://cloud.mongodb.com" target="_blank">cloud.mongodb.com</A> - create a free login if needed.<BR><BR>
 1. If needed, create an organization (example: Code For Good). <BR><BR>
 1. Create a project (example: WildAid). <BR><BR>
 1. Click Access Manager, then Organization Access

@@ -41,7 +41,7 @@ Now that you've populated your Atlas database, this page will walk you through c
       `stitch-cli secrets add --app-id=wildaidapp-xxxxx --name=AWS-secret-key --value=my-aws-secret-api-key --base-url=https://realm-dev.mongodb.com`<BR><BR>
 1. Import the Realm code
       1. Get the Realm code to import - `git clone Realm_repo` <BR>
-      For now, extract <A HREF="/assets/files/WildAidRealm.tar.gz">WildAidRealm.tar.gz</A>.<BR><BR>
+      For now, download and extract <A HREF="/assets/files/WildAidRealm.tar.gz">WildAidRealm.tar.gz</A>.<BR><BR>
       1. Edit files: change "name" to your application name (wildaidapp-xxxxx) and "ClusterName" to your cluster's name (example is WildAid)<BR>
        `stitch.json services/RealmSync/config.json services/mongodb-atlas/config.json`<BR><BR>
       1. Edit files: change AWS service info (leave unedited if not using): <BR>
