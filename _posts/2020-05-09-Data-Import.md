@@ -18,9 +18,10 @@ Now that you've created your Atlas database, import the sample dataset:
 <img src="/assets/images/Click_Already_Have.png" style="border:1px solid black" width="100%"><BR><BR>
    1. Copy the connection string
 <img src="/assets/images/Copy_Connection_String.png" style="border:1px solid black" width="100%"><BR><BR>
+   1. Click "Close"
 
-1. Import with mongorestore using the path and connection string, dropping any existing tables. Make sure to add your username in place of USER in the connection string, followed by @ and then the CLUSTER:
-   1. `mongorestore --drop --uri "mongodb+srv://USER@CLUSTER.mongodb.net/wildaid" /PATH/TO/CodeForGoodbackup`<BR><BR>
+1. In a terminal window, use the mongorestore utility with the `mongodb+srv` link you just copied in the connection string. Make sure to add the username you just created in place of USER in the connection string, followed by @ and then the rest of the mongodb+srv link - this example's link is "ofish-xxxxx.mongodb.net/test":
+   1. `mongorestore --drop --uri "mongodb+srv://USER@ofish-xxxxx.mongodb.net/test" /PATH/TO/CodeForGoodbackup`<BR><BR>
 1. Check with Data Explorer
    1. Go to <code>Collections</code> in the Atlas UI:
 <img src="/assets/images/Atlas_Data_Explorer.png" style="border:1px solid black" width="100%"><BR><BR>
