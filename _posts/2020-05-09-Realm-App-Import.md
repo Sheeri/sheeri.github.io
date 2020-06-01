@@ -61,4 +61,5 @@ Now that you've populated your Atlas database, this page will walk you through c
       1. Verify the code got imported by going to the Realm App and clicking "Functions" on the left-hand side. You should see several functions, as below:
         <img src="/assets/images/Functions.png" style="border:1px solid black" width="100%"><BR><BR>
 
-Now that you have set up Realm, it's time to connect Realm to your data with a user!
+
+You have successfully set up a Realm serverless application! You may get emails like "A Database Trigger has been Suspended", do not worry about that for now. It's time to connect Realm to your data with a user!
