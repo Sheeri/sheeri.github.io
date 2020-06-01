@@ -8,8 +8,13 @@ categories: build
 The first step is to set up the Atlas database - this is the foundation data layer that serve data to the mobile apps, charts, and web apps.
 
 1. Login to <A HREF="https://cloud.mongodb.com">cloud.mongodb.com</A> - create a free login if needed.<BR><BR>
-1. Create a project (example: Code For Good). <BR><BR>
-1. Go to Access Manager, and give yourself all permissions, not just Owner.<BR><BR>
+1. If needed, create an organization (example: Code For Good). <BR><BR>
+1. Create a project (example: WildAid). <BR><BR>
+1. Click Access Manager, then Organization Access
+<img src="/assets/images/Atlas_Project_Access.png" style="border:1px solid black" width="100%"><BR><BR>
+   1. Give yourself all permissions, not just Owner, and click the green checkmark.<BR><BR>
+<img src="/assets/images/Atlas_Access_Permissions.png" style="border:1px solid black" width="100%"><BR><BR>
+
 1. Create a 4.4 Cluster:
    1. Choose a path - choose Shared Clusters: 
 <img src="/assets/images/Atlas_Choose_Path.png" style="border:1px solid black" width="100%"><BR><BR>
