@@ -12,29 +12,24 @@ The first step is to set up the Atlas database - this is the foundation data lay
 1. Create a project (example: WildAid). <BR><BR>
 1. Click Access Manager, then Organization Access
 <img src="/assets/images/Atlas_Project_Access.png" style="border:1px solid black" width="100%"><BR><BR>
+   1. Click EDIT PERMISSIONS (get screenshot)
    1. Give yourself all permissions, not just Owner, and click the green checkmark.<BR><BR>
 <img src="/assets/images/Atlas_Access_Permissions.png" style="border:1px solid black" width="100%"><BR><BR>
 
 1. Create a 4.4 Cluster:
-   1. Choose a path - choose Shared Clusters: 
+   1. Click "projects" (they're on the access permissions page)
+   1. Click "WildAid"
+   1. Click Create a Cluster
+   1. Choose a path - choose the FREE Shared Clusters on the left: 
 <img src="/assets/images/Atlas_Choose_Path.png" style="border:1px solid black" width="100%"><BR><BR>
    1. Choose Cloud Provider and Region
 <img src="/assets/images/Atlas_Cloud_Region.png" style="border:1px solid black" width="100%"><BR><BR>
-   1. Choose Cluster Tier - M0 is the free tier
+   1. Choose Cluster Tier - choose M0, the free tier
 <img src="/assets/images/Atlas_Tier.png" style="border:1px solid black" width="100%"><BR><BR>
    1. Select a Version - 4.4
 <img src="/assets/images/Atlas_Version.png" style="border:1px solid black" width="100%"><BR><BR>
    1. Cluster Name (example: OFISH)
 <img src="/assets/images/Atlas_Cluster_Name.png" style="border:1px solid black" width="100%"><BR><BR>
    1. Click "Create Cluster" - this will take a few minutes <BR><BR>
-1. Setup connection security
-   1. Click "CONNECT" on the cluster
-<img src="/assets/images/Atlas_CONNECT.png" style="border:1px solid black" width="100%"><BR><BR>
-   1. On this screen, click "Add Your Current IP Address"
-<img src="/assets/images/Atlas_Setup_User.png" style="border:1px solid black" width="100%"><BR><BR>
-   1. Add in a Description so you know it's yours later on. Click "Add IP Address"
-<img src="/assets/images/Atlas_Whitelist_IP.png" style="border:1px solid black" width="100%"><BR><BR>
-   1. Add database access (example: admin)
-<img src="/assets/images/Atlas_Add_MongoDB_User.png" style="border:1px solid black" width="100%"><BR><BR>
 
 Congratulations, you have set up an Atlas database!
