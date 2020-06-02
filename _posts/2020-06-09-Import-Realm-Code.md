@@ -5,8 +5,6 @@ date: 2020-05-09 06:00:00 -0400
 categories: build
 ---
 
-TAKE OUT HOSTING FROM THE stitch.json
-
 Now it's time to import the Realm code!
 
 
