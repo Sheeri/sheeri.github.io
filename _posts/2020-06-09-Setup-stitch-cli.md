@@ -8,7 +8,7 @@ categories: build
 1. stitch-cli setup
    1. Install stitch-cli - follow the instructions for manual install or `npm` install at <A HREF="https://docs.mongodb.com/stitch/deploy/stitch-cli-reference/" _target="blank">https://docs.mongodb.com/stitch/deploy/stitch-cli-reference</A><BR><BR>
    1. Connect your commandline with Realm using `stitch-cli login` and the values from the template for "API Public Key" and "API Private Key":<BR>
-      `stitch-cli login --api-key="API_Public_Key" --private-api-key="API_Private_Key"`<BR><BR>
+   - `stitch-cli login --api-key="API_Public_Key" --private-api-key="API_Private_Key"`<BR><BR>
       cloud-dev users add `--base-url=https://realm-dev.mongodb.com`<BR><BR>
       It has worked when the output is <BR>`you have successfully logged in as PUBLIC_API_KEY`<BR><BR>
 

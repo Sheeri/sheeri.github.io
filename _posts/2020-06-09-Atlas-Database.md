@@ -5,9 +5,6 @@ date: 2020-05-09 00:00:00 -0400
 categories: build
 ---
 
-Make a template and tell ppl to put things in and take things out
-
-
 The first step is to set up the Atlas database - this is the foundation data layer that serve data to the mobile apps, charts, and web apps.
 
 1. Login to <A HREF="https://cloud.mongodb.com" target="_blank">cloud.mongodb.com</A> - create a free login if needed.<BR><BR>
