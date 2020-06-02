@@ -9,6 +9,7 @@ Recap:<BR>
 Project Name: WildAid<BR>
 Cluster name: OceanWatchData<BR><BR>
 
+1. Go to your website with the URL from the previous step
 1. Login with your username that you set up in the “Data” section
 1. If you can’t login, check:
 1. appname in src/.env/config.js
