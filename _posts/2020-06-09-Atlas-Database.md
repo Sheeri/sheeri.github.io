@@ -12,7 +12,7 @@ The first step is to set up the Atlas database - this is the foundation data lay
 1. Create a project (example: WildAid). Fill in the "Project Name" on the template with this value.<BR><BR>
 1. Click Access Manager, then Organization Access:
 <img src="/assets/images/Atlas_Project_Access.png" style="border:1px solid black" width="100%"><BR><BR>
-   1. Click EDIT PERMISSIONS (get screenshot)
+   1. Click the EDIT PERMISSIONS button next to your name.
    1. Give yourself all permissions, not just Owner, and click the green checkmark.<BR><BR>
 <img src="/assets/images/Atlas_Access_Permissions.png" style="border:1px solid black" width="100%"><BR><BR>
 
